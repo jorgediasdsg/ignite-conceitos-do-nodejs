@@ -15,7 +15,7 @@ function checksExistsUserAccount(request, response, next) {
 }
 
 app.post('/users', (request, response) => {
-  // Complete aqui
+  const { name, username } = request;
 });
 
 app.get('/todos', checksExistsUserAccount, (request, response) => {
